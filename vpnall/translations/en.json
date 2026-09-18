@@ -1,0 +1,9 @@
+{
+	"settings.interval.label": "Refresh seconds",
+	"settings.glyph_tun0.label": "tun0 glyph",
+	"settings.glyph_tun1.label": "tun1 glyph",
+	"settings.glyph_tun2.label": "tun2 glyph",
+	"settings.glyph_tun3.label": "tun3 glyph",
+	"settings.color_active.label": "Active color",
+	"settings.color_inactive.label": "Inactive color"
+}

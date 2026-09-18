@@ -1,0 +1,86 @@
+id = "sasha/vpn-stats"
+name = "VPN stats"
+version = "1.0.0"
+plugin_api = 3
+author = "sasha"
+license = "MIT"
+icon = "activity"
+description = "Work VPN client counters grouped into three tunnel ranges with up/down/same arrows vs the previous sample."
+tags = ["network", "vpn"]
+
+[[widget]]
+id = "stats"
+entry = "stats.luau"
+
+  [[widget.setting]]
+  key = "interval"
+  type = "int"
+  label_key = "settings.interval.label"
+  default = 10
+  min = 1
+
+  [[widget.setting]]
+  key = "url"
+  type = "string"
+  label_key = "settings.url.label"
+  default = "http://10.7.33.33:8001/api/stats"
+
+  [[widget.setting]]
+  key = "glyph_1"
+  type = "glyph"
+  label_key = "settings.glyph_1.label"
+  default = "shield-check"
+
+  [[widget.setting]]
+  key = "glyph_2"
+  type = "glyph"
+  label_key = "settings.glyph_2.label"
+  default = "shield"
+
+  [[widget.setting]]
+  key = "glyph_3"
+  type = "glyph"
+  label_key = "settings.glyph_3.label"
+  default = "server"
+
+  [[widget.setting]]
+  key = "glyph_total"
+  type = "glyph"
+  label_key = "settings.glyph_total.label"
+  default = "activity"
+
+  [[widget.setting]]
+  key = "color_value"
+  type = "color"
+  label_key = "settings.color_value.label"
+  default = "#C5C8C6"
+
+  [[widget.setting]]
+  key = "color_icon"
+  type = "color"
+  label_key = "settings.color_icon.label"
+  default = "#C5C8C6"
+
+  [[widget.setting]]
+  key = "color_total"
+  type = "color"
+  label_key = "settings.color_total.label"
+  default = "#2E8B57"
+
+  [[widget.setting]]
+  key = "color_up"
+  type = "color"
+  label_key = "settings.color_up.label"
+  default = "#00FF00"
+
+  [[widget.setting]]
+  key = "color_down"
+  type = "color"
+  label_key = "settings.color_down.label"
+  default = "#FF0000"
+
+  [[widget.setting]]
+  key = "color_equal"
+  type = "color"
+  label_key = "settings.color_equal.label"
+  default = "#4682B4"

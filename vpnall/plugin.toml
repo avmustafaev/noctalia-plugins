@@ -1,0 +1,57 @@
+id = "sasha/vpnall"
+name = "VPN status"
+version = "1.0.0"
+plugin_api = 3
+author = "sasha"
+license = "MIT"
+icon = "network"
+description = "Tunnel indicators for tun0-tun3, shown bright when the interface has a route and dimmed when it does not."
+tags = ["network", "vpn"]
+dependencies = ["iproute2"]
+
+[[widget]]
+id = "status"
+entry = "status.luau"
+
+  [[widget.setting]]
+  key = "interval"
+  type = "int"
+  label_key = "settings.interval.label"
+  default = 5
+  min = 1
+
+  [[widget.setting]]
+  key = "glyph_tun0"
+  type = "glyph"
+  label_key = "settings.glyph_tun0.label"
+  default = "plug-connected"
+
+  [[widget.setting]]
+  key = "glyph_tun1"
+  type = "glyph"
+  label_key = "settings.glyph_tun1.label"
+  default = "world"
+
+  [[widget.setting]]
+  key = "glyph_tun2"
+  type = "glyph"
+  label_key = "settings.glyph_tun2.label"
+  default = "network"
+
+  [[widget.setting]]
+  key = "glyph_tun3"
+  type = "glyph"
+  label_key = "settings.glyph_tun3.label"
+  default = "server"
+
+  [[widget.setting]]
+  key = "color_active"
+  type = "color"
+  label_key = "settings.color_active.label"
+  default = "#FFFFFF"
+
+  [[widget.setting]]
+  key = "color_inactive"
+  type = "color"
+  label_key = "settings.color_inactive.label"
+  default = "#707880"

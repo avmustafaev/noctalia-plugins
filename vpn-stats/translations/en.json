@@ -1,0 +1,14 @@
+{
+	"settings.interval.label": "Refresh seconds",
+	"settings.url.label": "Stats API URL",
+	"settings.glyph_1.label": "Group 1 glyph",
+	"settings.glyph_2.label": "Group 2 glyph",
+	"settings.glyph_3.label": "Group 3 glyph",
+	"settings.glyph_total.label": "Total glyph",
+	"settings.color_value.label": "Value color",
+	"settings.color_icon.label": "Other icon color",
+	"settings.color_total.label": "Total icon color",
+	"settings.color_up.label": "Arrow up color",
+	"settings.color_down.label": "Arrow down color",
+	"settings.color_equal.label": "Arrow same color"
+}
